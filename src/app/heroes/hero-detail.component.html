@@ -1,0 +1,32 @@
+<ActionBar [title]="'Monster Age 2 empire  ( ' + name +' )'"></ActionBar>
+
+<GridLayout *ngIf="hero" rows="auto, auto, *" columns="*, *" class="p-10">
+  <Label class="h2" text="Information" row="0" colSpan="*"></Label>
+  <GridLayout
+    row="2"
+    col="0"
+    colSpan="2"
+    rows="auto, auto, auto, auto, auto, auto, auto, auto, auto"
+    columns="auto, *"
+  >
+  <Label text=" Monster Name   : " class="font-weight-bold" row="0" col="0"></Label>
+  <Label [text]="hero.name" class="text-uppercase" row="0" col="1"></Label>
+  <Label text="Size Monster   : " class="font-weight-bold" row="1" col="0"></Label>
+  <Label [text]="hero.size"  row="1" col="1"></Label>
+  <Label text="Type Monster   : " class="font-weight-bold" row="2" col="0"></Label>
+  <Label [text]="hero.type"  row="2" col="1"></Label>
+  <Label text="Armor Class   : " class="font-weight-bold" row="3" col="0"></Label>
+  <Label [text]="hero.armor_class"  row="3" col="1"></Label>
+  <Label text="Hit Points   : " class="font-weight-bold" row="4" col="0"></Label>
+  <Label [text]="hero.hit_points"  row="4" col="1"></Label>
+  <Label text="Strength   : " class="font-weight-bold" row="5" col="0"></Label>
+  <Label [text]="hero.strength"  row="5" col="1"></Label>
+  <Label text="Dexterity   : " class="font-weight-bold" row="6" col="0"></Label>
+  <Label [text]="hero.dexterity"  row="6" col="1"></Label>
+  <Label text="Constitution   : " class="font-weight-bold" row="7" col="0"></Label>
+  <Label [text]=hero.constitution  row="7" col="1"></Label>
+  <Label text="Intelligences   : " class="font-weight-bold" row="8" col="0"></Label>
+  <Label [text]="hero.intelligence"  row="8" col="1"></Label>
+
+  </GridLayout>
+</GridLayout>
